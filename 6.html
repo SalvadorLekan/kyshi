@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head></head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Template</title>
+		<style>
+			* {
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+				margin: 0;
+				box-sizing: border-box;
+				max-width: 100%;
+			}
+			.content {
+				border-radius: 15px;
+				padding: 25px 0px;
+				margin: 20px 0;
+				padding: 25px;
+				background: #fff;
+				border: 1px solid #1e347a29;
+			}
+			.logo {
+				display: block;
+				margin: 0 auto;
+			}
+			p {
+				margin-bottom: 20px;
+				line-height: 25px;
+				color: #222b4a;
+			}
+			.heading {
+				font-weight: 700;
+				color: #222b4a;
+				font-size: x-large;
+				line-height: 25px;
+			}
+			tr,
+			td,
+			th {
+				padding: 20px 10px;
+				text-align: start;
+				font-size: small;
+			}
+			small {
+				color: #7880aa;
+			}
+			.action {
+				display: block;
+				text-decoration: none;
+				padding: 25px;
+				text-align: center;
+				color: #fff;
+				background: #04ce9d;
+				border-radius: 5px;
+				margin: 20px 0;
+			}
+			.bottom__link {
+				font-weight: 600;
+				color: #fff;
+			}
+			.text-center {
+				text-align: center;
+				display: block;
+			}
+			.bold {
+				font-weight: 600;
+			}
+			.flex {
+				display: flex;
+				align-items: flex-start;
+			}
+			.social-app {
+				padding: 25px;
+				border-radius: 10px;
+				color: #fff;
+			}
+			.flex img {
+				padding-right: 10px;
+			}
+			.social-center {
+				display: inline-block;
+				padding: 15px;
+				border-radius: 7px;
+				background-color: #55639628 !important;
+			}
+			.d-app {
+				margin: 25px auto;
+			}
+			.social-center * {
+				flex-shrink: 0;
+				vertical-align: middle;
+			}
+			.l-price {
+				color: blue;
+			}
+			.d-price {
+				color: #14276d;
+			}
+			.receipt {
+				padding: 25px;
+				border-radius: 15px;
+				background-color: #fafbff;
+				margin: 20px auto;
+				border: 1px solid #1e347a29;
+			}
+			.stroke {
+				border-bottom: 1px solid #1e347a29;
+			}
+			.card {
+				padding: 25px 0px;
+				background: #fafbff;
+			}
+			.main {
+				margin: 0 auto;
+				max-width: 700px;
+			}
+			@media screen and (min-width: 700px) {
+				.main {
+					width: 60%;
+				}
+				#break {
+					display: none;
+				}
+				tr,
+				td,
+				th {
+					font-size: medium;
+				}
+			}
+			@media screen and (max-width: 250px) {
+				.receipt,
+				td {
+					padding: 10px 5px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<div class="main">
+				<img
+					src="https://res.cloudinary.com/salvadorlekan/image/upload/v1625170944/Regular_bbqyev.png"
+					alt="Kyshi logo"
+					class="logo"
+					width="80"
+					height="30"
+				/>
+				<div class="content">
+					<p>Dear James,</p>
+
+					<p>
+						Your Swap transaction reference number <b class="d-price">KY12345</b> of
+						<b class="l-price">£100.00</b> to <b class="d-price">Recepient</b> is now complete.
+					</p>
+
+					<div class="action">Transaction processed</div>
+					<div class="receipt">
+						<table style="border-collapse: collapse; width: 100%">
+							<thead>
+								<tr class="stroke">
+									<th>Transaction reciept</th>
+									<th>&nbsp;</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Exchange type</td>
+									<td>Swap</td>
+								</tr>
+								<tr>
+									<td>Recepient received</td>
+									<td>₦600,000.00</td>
+								</tr>
+								<tr>
+									<td>Exchange rate</td>
+									<td>£1 / ₦600.00</td>
+								</tr>
+								<tr>
+									<td>Service charge</td>
+									<td>£3.72</td>
+								</tr>
+								<tr class="stroke">
+									<td>Total paid</td>
+									<td>£1,003.72</td>
+								</tr>
+								<tr>
+									<td>Recepient</td>
+									<td>Oyeyemi Adeyemo</td>
+								</tr>
+								<tr>
+									<td>Recepient’s bank</td>
+									<td>Diamond Bank Ltd</td>
+								</tr>
+								<tr class="stroke">
+									<td>Recepient’s account no.</td>
+									<td>0011223344</td>
+								</tr>
+								<tr>
+									<td>Transaction reference</td>
+									<td>#1234567890</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<p>Thank you for using Kyshi</p>
+					<p>The Kyshi Team.</p>
+					<br /><br />
+					<div class="social-app" style="background: #222b4a; text-align: center">
+						<span class="social-center" style="line-height: 30px">
+							Visit
+							<a
+								href="https://www.kyshi.co"
+								style="
+									color: #04ce9d !important;
+									text-decoration: none;
+									font-weight: 700;
+									vertical-align: baseline !important;
+								"
+								>www.kyshi.co</a
+							>
+							or follow us on: <span id="break"><br /><br /></span>
+							<img
+								src="https://res.cloudinary.com/salvadorlekan/image/upload/v1625170945/facebook_ik55u5.png"
+								alt="facebook"
+							/>
+							<img
+								src="https://res.cloudinary.com/salvadorlekan/image/upload/v1625170945/Twitter_xv1sez.png"
+								alt="Twitter"
+							/>
+							<img
+								src="https://res.cloudinary.com/salvadorlekan/image/upload/v1625170944/Instagram_ohuxov.png"
+								alt="Instagram"
+							/>
+							<img
+								src="https://res.cloudinary.com/salvadorlekan/image/upload/v1625170945/youtube_v40xdh.png"
+								alt="youtube"
+							/>
+						</span>
+						<div class="d-app">Download our new app</div>
+						<img
+							width="127"
+							height="42"
+							src="https://res.cloudinary.com/salvadorlekan/image/upload/v1625170944/googlePlay_dqg4b4.png"
+							alt="Download from Google Play"
+						/>
+						<img
+							width="127"
+							height="42"
+							src="https://res.cloudinary.com/salvadorlekan/image/upload/v1625170944/appStore_wzympz.png"
+							alt="Download from App Store"
+						/>
+					</div>
+
+					<br /><br />
+					<small
+						>This message was sent to #customer’s email from Kyshi Ltd, company registration number 09736920
+						of 85 Great Portland Street, London, England, W1W 7LT. United Kingdom. © 2020 Kyshi Limited |
+						All Rights Reserved. </small
+					><br /><br />
+					<small
+						>Kyshi Ltd is a limited company registered in England and Wales and is Authorised and Regulated
+						by the Financial Conduct Authority (FCA) under the Small Payment Institution regulation,
+						registration number 918206.
+					</small>
+					<br /><br />
+					<p>
+						<a href=""><b style="color: #222b4a !important">Unsubscribe</b></a
+						>&nbsp;&nbsp; |&nbsp;&nbsp;
+						<a href=""><b style="color: #222b4a !important">Privacy policy</b></a
+						>&nbsp;&nbsp; |&nbsp;&nbsp;
+						<a href=""><b style="color: #222b4a !important">Terms and conditions</b></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
